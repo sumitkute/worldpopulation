@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 
 namespace WorldPopulationService.Models
 {
@@ -23,8 +24,9 @@ namespace WorldPopulationService.Models
     {
         public DbSet<People> People { get; set; }
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("PeopleDBConnection", throwIfV1Schema: false)
         {
+          //  Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseAlways<ApplicationDbContext>());
         }
         
         public static ApplicationDbContext Create()

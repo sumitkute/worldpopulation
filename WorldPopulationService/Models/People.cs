@@ -12,6 +12,6 @@ namespace WorldPopulationService.Models
         public string AadhaarNo { get; set; }
         public string Gender { get; set; }
         public string Age { get; set; }
-        public DateTime DOB { get; set; }
+        public DateTime ?DOB { get; set; }
     }
 }
