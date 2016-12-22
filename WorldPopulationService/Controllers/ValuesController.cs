@@ -8,7 +8,7 @@ using WorldPopulationService.Models;
 
 namespace WorldPopulationService.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
