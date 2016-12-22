@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using world.data;
 using WorldPopulationService.Models;
 
 namespace WorldPopulationService.Controllers

@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
+using world.data;
 
 namespace WorldPopulationService.Models
 {

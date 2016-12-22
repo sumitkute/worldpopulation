@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "worldpopulation", "worldpop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldPopulationService", "WorldPopulationService\WorldPopulationService.csproj", "{99B863A7-73C1-468B-A859-5DCAD620EE2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "world.data", "world.data\world.data.csproj", "{DCF8D752-101D-4086-8926-709AA9C06E07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{99B863A7-73C1-468B-A859-5DCAD620EE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99B863A7-73C1-468B-A859-5DCAD620EE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99B863A7-73C1-468B-A859-5DCAD620EE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF8D752-101D-4086-8926-709AA9C06E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF8D752-101D-4086-8926-709AA9C06E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF8D752-101D-4086-8926-709AA9C06E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF8D752-101D-4086-8926-709AA9C06E07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
