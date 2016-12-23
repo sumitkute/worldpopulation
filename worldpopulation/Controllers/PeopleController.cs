@@ -10,7 +10,7 @@ using world.data;
 
 namespace worldpopulation.Controllers
 {
-    public class WorldPopulationController : Controller
+    public class PeopleController : Controller
     {
         // GET: WorldPopulation
         public ActionResult Index()
