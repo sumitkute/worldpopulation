@@ -24,6 +24,7 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("People", "Index", "People")</li>
+                    <li>@Html.ActionLink("Online Retail", "Index", "OnlineRetail")</li>
                 </ul>
                 <div class="navbar-right"><span class="text-primary"> You are @((string.IsNullOrEmpty(HttpContext.Current.User.Identity.Name))?"Guest": HttpContext.Current.User.Identity.Name)  user</span> </div>
             </div>
