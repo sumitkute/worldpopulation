@@ -12,9 +12,9 @@ namespace WorldPopulationService.Controllers
 {
     public class OnlineRetailController : ApiController
     {
-        public async Task<IHttpActionResult> IndexAsync()
+        public async Task<IHttpActionResult> Get()
         {
-            var items = await DocumentDBRepository<Invoice>.GetItemsAsync(x =>x.Quality > 0, 100);
+            var items = await DocumentDBRepository<Invoice>.GetItemsAsync(x =>x.Quantity > 0, 100);
             if (items.Count() == 0)
                 return NotFound();
             return Ok(items);

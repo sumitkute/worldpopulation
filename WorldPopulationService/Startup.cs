@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Owin;
 using Owin;
+using world.data;
 
 [assembly: OwinStartup(typeof(WorldPopulationService.Startup))]
 
@@ -13,6 +14,7 @@ namespace WorldPopulationService
         public void Configuration(IAppBuilder app)
         {
             //ConfigureAuth(app);
+            DocumentDBRepository<Invoice>.Initialize();
         }
     }
 }

@@ -43,10 +43,10 @@
                 .AsDocumentQuery();
 
             List<T> results = new List<T>();
-            while (query.HasMoreResults)
-            {
+            //while (query.HasMoreResults)
+            //{
                 results.AddRange(await query.ExecuteNextAsync<T>());
-            }
+            //}
 
             return results;
         }
