@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "worldpopulation.api", "Worl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "world.data", "world.data\world.data.csproj", "{DCF8D752-101D-4086-8926-709AA9C06E07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftAzure1", "MicrosoftAzure1\MicrosoftAzure1.csproj", "{6EBB621E-780E-46AB-9610-A09D3B0D5977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DCF8D752-101D-4086-8926-709AA9C06E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCF8D752-101D-4086-8926-709AA9C06E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCF8D752-101D-4086-8926-709AA9C06E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBB621E-780E-46AB-9610-A09D3B0D5977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBB621E-780E-46AB-9610-A09D3B0D5977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBB621E-780E-46AB-9610-A09D3B0D5977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBB621E-780E-46AB-9610-A09D3B0D5977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

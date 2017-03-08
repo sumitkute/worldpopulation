@@ -20,7 +20,7 @@ namespace worldpopulation.Controllers
             client.BaseUrl = new Uri(ConfigurationManager.AppSettings["ServiceURL"].ToString());
             var request = new RestRequest("/api/OnlineRetail", Method.GET);
             var response = client.Execute<List<Invoice>>(request);
-            return View("Index", response);
+            return View("Index", response.Data);
         }
     }
 }

@@ -1,74 +1,76 @@
-﻿@model world.data.Invoice
+﻿@model List<world.data.Invoice>
 
 <div>
     <h4>Invoice</h4>
     <hr />
+   @foreach (var invoice in Model)
+   {
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.InvoiceNo)
+            @Html.DisplayNameFor(model => invoice.InvoiceNo)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.InvoiceNo)
+            @Html.DisplayFor(model => invoice.InvoiceNo)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Stockcode)
+            @Html.DisplayNameFor(model => invoice.StockCode)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Stockcode)
+            @Html.DisplayFor(model => invoice.StockCode)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayNameFor(model => invoice.Description)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Description)
+            @Html.DisplayFor(model => invoice.Description)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Quality)
+            @Html.DisplayNameFor(model => invoice.Quantity)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Quality)
+            @Html.DisplayFor(model => invoice.Quantity)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.InvoiceDate)
+            @Html.DisplayNameFor(model => invoice.InvoiceDate)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.InvoiceDate)
+            @Html.DisplayFor(model => invoice.InvoiceDate)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.UnitPrice)
+            @Html.DisplayNameFor(model => invoice.UnitPrice)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.UnitPrice)
+            @Html.DisplayFor(model => invoice.UnitPrice)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.CustomerId)
+            @Html.DisplayNameFor(model => invoice.CustomerID)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CustomerId)
+            @Html.DisplayFor(model => invoice.CustomerID)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Country)
+            @Html.DisplayNameFor(model => invoice.Country)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Country)
+            @Html.DisplayFor(model => invoice.Country)
         </dd>
-
     </dl>
+   }
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
