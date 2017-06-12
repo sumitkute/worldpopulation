@@ -32,7 +32,10 @@ namespace worldpopulation.Controllers
                 var URI = $"{resource}/api/values/5";
                 var result = client.GetAsync(URI).Result;
                 ViewBag.URI = URI;
-                ViewBag.Result = result.Content.ToString();
+                if (result.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    ViewBag.Result = result.Content.ReadAsStringAsync().Result;
+                }
             }
             catch (Exception ex) {
                 ViewBag.Exception = ex.Message;
