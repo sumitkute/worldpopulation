@@ -27,8 +27,16 @@ namespace worldpopulation.Controllers
             var token = GetS2SAccessTokenAsync(authority, resource, clientId, clientSecret);
             ViewBag.Token = token.AccessToken;
             HttpClient client = new HttpClient();
-            var result = client.GetAsync($"{resource}/api/values/5").Result;
-            ViewBag.Result = result.Content.ToString();
+            try
+            {
+                var URI = $"{resource}/api/values/5";
+                var result = client.GetAsync(URI).Result;
+                ViewBag.URI = URI;
+                ViewBag.Result = result.Content.ToString();
+            }
+            catch (Exception ex) {
+                ViewBag.Exception = ex.Message;
+            }
             return View();
         }
 
