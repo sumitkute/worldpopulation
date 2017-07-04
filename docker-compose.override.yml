@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  worldpopulation.web:
+    ports:
+      - "80"
+  worldpopulationapi:
+    ports:
+      - "80"
+networks:
+  default:
+    external:
+      name: nat
+
