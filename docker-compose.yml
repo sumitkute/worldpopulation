@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  worldpopulatioweb:
+    image: sumitkute/worldpopulation
+    ports: 
+     - "80:80"
+  worldpopulatioweb:
+    images: sumitkute/worldpopulationapi
+    ports:
+     - "8080:8080"
